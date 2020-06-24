@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     marginVertical: 10,
     padding: 20,
-    transform: 'skew(-6deg)',
+    transform: 'skew(-6deg)'
   },
   box: {
     background:

@@ -6,6 +6,7 @@ import Verification from './containers/verification';
 import OrderComplete from './containers/orderComplete';
 import Notifications from './containers/notifications';
 import MyOrders from './containers/myOrders';
+import Cart from './containers/cart'
 
 const { height, width } = Dimensions.get('window');
 
@@ -16,9 +17,10 @@ export default function App() {
   // <OrderComplete/>
   // <Notifications/>
   // <MyOrders />
+  // <Cart />
   return (
     <View style={styles.container}>
-      <MyOrders />
+      <Cart />
     </View>
   );
 }

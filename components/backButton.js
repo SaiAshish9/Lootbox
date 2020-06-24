@@ -10,7 +10,7 @@ import {
 
 const { height, width } = Dimensions.get('window');
 
-const Button = ({ title }) => (
+const Button = ({ title, subtitle }) => (
   <TouchableHighlight style={{ border: 'none', outline: 'none' }}>
     <View style={styles.auth}>
       <View style={styles.borderBox}>
@@ -27,12 +27,24 @@ const Button = ({ title }) => (
         style={{
           fontStyle: 'italic',
           marginLeft: 10,
-          opacity: 0.5,
+          opacity: !subtitle && 0.5,
+          fontSize: '1rem',
           color: '#fff',
           textTransform: 'uppercase',
           // fontFamily:'Montserrat Italic'
         }}>
         {title}
+      </Text>
+      <Text
+        style={{
+          fontStyle: 'italic',
+          marginLeft: 10,
+          opacity: 0.5,
+          color: '#fff',
+          fontSize: '0.8rem',
+          // fontFamily:'Montserrat Italic'
+        }}>
+        {subtitle}
       </Text>
     </View>
   </TouchableHighlight>
@@ -55,7 +67,7 @@ const styles = StyleSheet.create({
     padding: 1.5,
   },
   auth: {
-    marginVertical: height * 0.05,
+    marginVertical: height * 0.04,
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',

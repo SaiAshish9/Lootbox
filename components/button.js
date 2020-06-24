@@ -1,17 +1,44 @@
 import React from 'react';
 import { Text, View, StyleSheet, TouchableHighlight } from 'react-native';
 
-const Button = ({ text }) => (
+const Button = ({ text, rtext, flex }) => (
   <TouchableHighlight style={{ border: 'none', outline: 'none' }}>
     <View style={styles.btn}>
-      <Text
-        style={{
-          fontWeight: 'bold',
-          color: '#fff',
-          textTransform: 'uppercase',
-        }}>
-        {text}
-      </Text>
+      {!flex ? (
+        <Text
+          style={{
+            fontWeight: 'bold',
+            color: '#fff',
+            textTransform: 'uppercase',
+          }}>
+          {text}
+        </Text>
+      ) : (
+        <View
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            marginHorizontal:10
+          }}>
+          <Text
+            style={{
+              fontWeight: 'bold',
+              color: '#fff',
+              textTransform: 'uppercase',
+            }}>
+            {text}
+          </Text>
+          <Text
+            style={{
+              fontWeight: 'bold',
+              color: '#fff',
+            }}>
+            {rtext}
+          </Text>
+        </View>
+      )}
     </View>
   </TouchableHighlight>
 );
