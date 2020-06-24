@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     fontSize: '0.8rem',
     // fontFamily: 'Montserrat',
     background:
-      'linear-gradient(90deg, rgba(255,255,255,0.069) 0%, rgba(255,255,255,0.014) 100%)',
+      'linear-gradient(90deg, rgba(255,255,255,0.069) 0%, rgba(255,255,255,0.003) 100%)',
     color: '#ECDBFA',
   },
 });

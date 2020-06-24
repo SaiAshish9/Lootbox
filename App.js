@@ -3,17 +3,22 @@ import { View, StyleSheet, Dimensions } from 'react-native';
 import SignUp from './containers/signup';
 import Login from './containers/login';
 import Verification from './containers/verification';
-import OrderComplete from './containers/orderComplete'
+import OrderComplete from './containers/orderComplete';
+import Notifications from './containers/notifications';
+import MyOrders from './containers/myOrders';
 
 const { height, width } = Dimensions.get('window');
 
 export default function App() {
-  //  <SignUp/>
-  //  <Verification/>
-  //  <Login />
+  // <SignUp/>
+  // <Verification/>
+  // <Login />
+  // <OrderComplete/>
+  // <Notifications/>
+  // <MyOrders />
   return (
     <View style={styles.container}>
-      <OrderComplete/>
+      <MyOrders />
     </View>
   );
 }

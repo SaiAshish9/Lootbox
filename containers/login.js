@@ -17,7 +17,7 @@ const { height, width } = Dimensions.get('window');
 
 export default function App() {
   return (
-    <View >
+    <View>
       <View style={styles.box}></View>
 
       <View style={styles.auth}>
@@ -56,13 +56,11 @@ export default function App() {
 
       <Button text="login" />
       <OutlineButton text="Continue With Gmail" icon={true} />
-      
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-
   box: {
     height: height * 0.16,
     width: width * 0.4,

@@ -5,10 +5,10 @@ import {
   StyleSheet,
   TouchableHighlight,
   Image,
-  Dimensions
+  Dimensions,
 } from 'react-native';
 
-const {height,width} = Dimensions.get('window')
+const { height, width } = Dimensions.get('window');
 
 const Button = ({ title }) => (
   <TouchableHighlight style={{ border: 'none', outline: 'none' }}>
@@ -29,7 +29,7 @@ const Button = ({ title }) => (
           marginLeft: 10,
           opacity: 0.5,
           color: '#fff',
-          textTransform:'uppercase'
+          textTransform: 'uppercase',
           // fontFamily:'Montserrat Italic'
         }}>
         {title}
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     transform: 'skew(-10deg)',
     padding: 1.5,
   },
-    auth: {
+  auth: {
     marginVertical: height * 0.05,
     display: 'flex',
     flexDirection: 'row',
