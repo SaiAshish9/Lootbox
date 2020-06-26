@@ -7,6 +7,7 @@ import OrderComplete from './containers/orderComplete';
 import Notifications from './containers/notifications';
 import MyOrders from './containers/myOrders';
 import Cart from './containers/cart'
+import LootStore from './containers/lootStore'
 
 const { height, width } = Dimensions.get('window');
 
@@ -18,9 +19,10 @@ export default function App() {
   // <Notifications/>
   // <MyOrders />
   // <Cart />
+  // <LootStore/>
   return (
     <View style={styles.container}>
-      <Cart />
+      <LootStore />
     </View>
   );
 }

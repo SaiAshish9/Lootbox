@@ -173,7 +173,7 @@ const Cart = () => (
 
     <Box>
       <View>
-        <Text style={{ color: '#fff', fontSize: '0.8rem', marginBottom: 30 }}>
+        <Text style={{ color: '#ECDBFA', fontSize: '0.8rem', marginBottom: 30 }}>
           Package Details (4 Items)
         </Text>
       </View>
